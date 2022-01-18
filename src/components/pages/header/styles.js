@@ -10,6 +10,10 @@ export const DivFullHeader = styled.header`
   top: 0;
   left: 0;
   z-index: 10;
+  @media (max-width: 1151px) {
+    flex-direction: column;
+    height: 150px;
+  }
 `;
 
 export const DivHeader = styled.div`
@@ -26,6 +30,7 @@ export const NavLeft = styled.div`
   margin-left: 100px;
   font-family: ${themes.fontLogo};
   font-size: 30px;
+
   p {
     :hover {
       color: ${themes.colorSecondary};
@@ -33,6 +38,8 @@ export const NavLeft = styled.div`
       cursor: pointer;
       transition: all 0.3s ease;
     }
+  }
+  @media (max-width: 1151px) {
   }
 `;
 
@@ -61,5 +68,8 @@ export const NavRight = styled.div`
     :hover {
       background-color: ${themes.colorSecondary};
     }
+  }
+  @media (max-width: 1151px) {
+    margin-top: 20px;
   }
 `;

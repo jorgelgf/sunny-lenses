@@ -5,6 +5,7 @@ export const DivFull = styled.div`
   height: 100%;
   width: 100%;
   font-family: ${themes.font};
+  margin-bottom: 100px;
 `;
 
 export const DivHeader = styled.div`
@@ -19,6 +20,9 @@ export const MiniTitle = styled.div`
   font-size: 15px;
   margin: 40px 0;
   color: ${themes.fontColorPrimary};
+  @media (max-width: 650px) {
+    font-size: 12px;
+  }
 `;
 
 export const Description = styled.div`
@@ -27,6 +31,9 @@ export const Description = styled.div`
   font-size: 40px;
   margin: 30px 0;
   color: ${themes.fontColorPrimary};
+  @media (max-width: 650px) {
+    font-size: 16px;
+  }
 `;
 
 export const DivElements = styled.div`

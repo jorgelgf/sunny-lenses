@@ -6,7 +6,7 @@ import model3 from "../../../img/3.png";
 import model4 from "../../../img/4.jpg";
 import model5 from "../../../img/5.jpg";
 export const DivFull = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: ${themes.bgSection3};
   font-family: ${themes.font};
@@ -18,6 +18,13 @@ export const DivTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 970px) {
+    border: solid black;
+    flex-direction: column;
+    height: 770px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const DivDescription = styled.div`
@@ -28,6 +35,25 @@ export const DivDescription = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  //border: 1px solid;
+  h1 {
+    transition: all 0.3s ease;
+    :hover {
+      color: ${themes.colorPrimary};
+      text-shadow: 1px 1px 1px ${themes.fontColorPrimary};
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    @media (max-width: 1200px) {
+      font-size: 20px;
+      width: 400px;
+      margin: auto;
+      padding: 0;
+    }
+  }
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
 `;
 
 export const DivPhoto1 = styled.div`
@@ -35,14 +61,18 @@ export const DivPhoto1 = styled.div`
   width: 200px;
   height: 100vh;
   z-index: 10;
+  background-repeat: no-repeat;
   background-image: url(${model1});
   background-size: cover;
   background-position: -87px 0;
   z-index: 0;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const DivPhoto2 = styled.div`
-  margin: 340px 30px 0 0;
+  margin: 399px 30px 0 0;
   width: 200px;
   height: 100vh;
   position: absolute;
@@ -52,7 +82,9 @@ export const DivPhoto2 = styled.div`
   background-size: cover;
   background-position: -350px 0;
   background-repeat: no-repeat;
-  //hide
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 export const DivPhoto3 = styled.div`
   border-radius: 50%;
@@ -64,6 +96,13 @@ export const DivPhoto3 = styled.div`
   background-repeat: no-repeat;
   background-position: -95px 0px;
   z-index: 3;
+  @media (max-width: 1200px) {
+    border-radius: 3px;
+    height: 100%;
+    background-position: center;
+    width: 90%;
+    margin: 0;
+  }
 `;
 export const DivPhoto4 = styled.div`
   border-radius: 50%;
@@ -75,6 +114,9 @@ export const DivPhoto4 = styled.div`
   background-position: -60px 0;
   z-index: 10;
   margin: 50px 0 0 750px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 export const DivPhoto5 = styled.div`
   border-radius: 50%;
@@ -85,6 +127,9 @@ export const DivPhoto5 = styled.div`
   background-repeat: no-repeat;
   background-position: -133px -60px;
   position: absolute;
-  left: 980px;
-  top: 1570px;
+  right: 220px;
+  top: 1715px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
