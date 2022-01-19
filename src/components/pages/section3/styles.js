@@ -100,7 +100,7 @@ export const DivPhoto2 = styled.div`
   background-size: cover;
   background-position: -350px 0;
   background-repeat: no-repeat;
-  @media (max-height: 1600px) {
+  @media (min-width: 1367px) {
     display: none;
   }
 `;
