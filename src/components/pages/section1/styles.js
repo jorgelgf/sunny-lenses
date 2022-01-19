@@ -90,9 +90,9 @@ export const DivInfo = styled.div`
     text-align: left;
     @media (max-width: 550px) {
       font-size: 15px;
-      text-align: center;
-      padding: 0;
+      text-align: right;
       width: 100%;
+      margin: 0 0;
     }
   }
 `;
@@ -101,6 +101,7 @@ export const DivButton = styled.div`
   @media (max-width: 1250px) {
     margin-bottom: 250px;
   }
+
   div {
     display: flex;
     flex-direction: row;
@@ -110,6 +111,9 @@ export const DivButton = styled.div`
     @media (min-width: 1600px) {
       width: 300px;
       margin-right: 200px;
+    }
+    @media (max-width: 550px) {
+      justify-content: center;
     }
     button {
       font-size: 15px;
@@ -125,10 +129,19 @@ export const DivButton = styled.div`
         color: ${themes.fontColorPrimary};
         cursor: pointer;
       }
-      @media (max-width: 1650px) {
+      @media (max-width: 1600px) {
         height: 100%;
         font-size: 25px;
         width: 250px;
+      }
+      @media (max-width: 550px) {
+        font-size: 15px;
+        width: auto;
+        margin: 10px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
