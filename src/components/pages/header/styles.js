@@ -40,6 +40,10 @@ export const NavLeft = styled.div`
   font-size: 30px;
 
   p {
+    @media (max-width: 490px) {
+      font-size: 20px;
+    }
+
     :hover {
       color: ${themes.colorSecondary};
       text-shadow: 1px 1px 5px ${themes.fontColorPrimary};
