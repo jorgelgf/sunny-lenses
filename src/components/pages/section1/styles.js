@@ -112,10 +112,13 @@ export const DivButton = styled.div`
     width: 450px;
     @media (min-width: 1600px) {
       width: 300px;
-      margin-right: 200px;
+      margin: 0;
     }
     @media (max-width: 550px) {
       justify-content: center;
+      align-items: flex-start;
+      margin: auto 0 0 20px;
+      width: auto;
     }
     button {
       font-size: 15px;
