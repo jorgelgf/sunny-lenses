@@ -5,7 +5,7 @@ export default function Section1() {
     <S.DivFull>
       <div>
         <S.Tittle>
-          <b>CUSTOM - TAILORED EYEWEAR </b>
+          <b>CUSTOM - TAILORED EYE WEAR </b>
         </S.Tittle>
         <S.DivInfo>
           <div>GLASSES THAT LOOK GOOD ON YOU, NOT JUST ON THE SHELF</div>

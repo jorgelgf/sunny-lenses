@@ -12,7 +12,7 @@ export default function Section2() {
           <b>HOW IT WORKS</b>
         </S.MiniTitle>
         <S.Description>
-          <b>This is the future of premiun eyewear</b>
+          <b>This is the future of premium eye wear</b>
         </S.Description>
       </S.DivHeader>
       <S.DivElements>

@@ -17,7 +17,7 @@ export default function Section3() {
           <p>
             Like a bespoke or couture drees, exceptional style starts with fit
             that was made just for you. We craft your glasses based to your
-            distinct stylistic choices and your personal preferences, so you´re
+            distinct stylistic choices and your personal preferences, so you're
             free to truly express yourself
           </p>
         </S.DivDescription>
