@@ -59,7 +59,6 @@ export const DivDescription = styled.div`
       width: 400px;
       margin: auto;
       padding: 0;
-      border: 1px solid;
     }
     @media (max-width: 460px) {
       width: auto;
