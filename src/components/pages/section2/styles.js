@@ -45,7 +45,6 @@ export const Description = styled.div`
   }
   @media (max-width: 550px) {
     font-size: 25px;
-    border: 1px solid;
     width: 200px;
     margin: 0 0;
   }
