@@ -23,6 +23,11 @@ export default function Section4() {
           <p>Explore lenses </p>
         </div>
       </S.DivCards>
+      <S.Footer>
+        {" "}
+        <span> 2023 Sunny Lenses. All Rights Reserved.</span>
+        <span>Privacy & Security | Terms and Conditions</span>
+      </S.Footer>
     </S.DivFull>
   );
 }

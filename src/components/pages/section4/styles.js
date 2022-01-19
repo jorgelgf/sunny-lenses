@@ -16,9 +16,9 @@ export const DivCards = styled.div`
   width: 100%;
   height: 400px;
 
-  @media (max-width: 1200px){
+  @media (max-width: 1200px) {
     height: 1200px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -37,23 +37,37 @@ export const DivCards = styled.div`
     background-color: ${themes.colorPrimary};
     cursor: pointer;
     transition: all 0.5s ease;
-    
 
     :hover {
       transition: all 0.5s ease;
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
-      
     }
     b {
       text-align: center;
-      width:150px;
+      width: 150px;
+    }
+    img {
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
+    }
   }
-  img{
-     margin-top:20px; 
-    width:100px;
-    height:100px;
-    
+`;
 
+export const Footer = styled.footer`
+  width: 100%;
+  background-color: ${themes.colorPrimary};
+  height: 20px;
+  font-family: ${themes.font};
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: ${themes.fontColorPrimary};
+  @media (max-width: 590px) {
+    font-size: 10px;
+    flex-direction: column;
+    height: 50px;
   }
 `;

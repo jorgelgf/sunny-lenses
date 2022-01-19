@@ -6,10 +6,18 @@ export const DivFull = styled.div`
   width: 100%;
   font-family: ${themes.font};
   margin-bottom: 100px;
+
+  @media (max-width: 720px) {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const DivHeader = styled.div`
-  width: 600px;
+  width: auto;
   height: auto;
   margin-left: 100px;
 
@@ -37,6 +45,7 @@ export const Description = styled.div`
   width: 600px;
   font-family: ${themes.font};
   font-size: 40px;
+  text-align: left;
   margin: 30px 0;
   color: ${themes.fontColorPrimary};
   @media (max-width: 800px) {
