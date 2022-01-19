@@ -6,9 +6,8 @@ export default function Section3() {
     <S.DivFull>
       <S.DivTop>
         <S.DivPhoto1 />
-        <S.DivPhoto2 />
 
-        <S.DivPhoto3 />
+        <S.DivPhoto2 />
         <S.DivDescription>
           <p>
             <b>DESIGNER BY YOU</b>
@@ -22,9 +21,7 @@ export default function Section3() {
           </p>
         </S.DivDescription>
       </S.DivTop>
-      <S.DivPhoto4 />
-
-      <S.DivPhoto5 />
+      <S.DivPhoto3 />
     </S.DivFull>
   );
 }

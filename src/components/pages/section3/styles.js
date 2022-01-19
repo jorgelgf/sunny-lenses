@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import { themes } from "../../../themes";
 import model1 from "../../../img/1.jpg";
-import model2 from "../../../img/2.jpg";
-import model3 from "../../../img/3.png";
-import model4 from "../../../img/4.jpg";
-import model5 from "../../../img/5.jpg";
+import model2 from "../../../img/2.png";
+import model3 from "../../../img/3.jpg";
 export const DivFull = styled.div`
   height: 100%;
   width: 100%;
@@ -37,6 +35,7 @@ export const DivDescription = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  z-index: 5;
 
   p {
     @media (max-width: 1200px) {
@@ -72,7 +71,7 @@ export const DivDescription = styled.div`
 `;
 
 export const DivPhoto1 = styled.div`
-  margin: 300px 150px 0 0;
+  margin: 300px 0px 0 0;
   width: 200px;
   height: 100vh;
   z-index: 10;
@@ -90,26 +89,11 @@ export const DivPhoto1 = styled.div`
 `;
 
 export const DivPhoto2 = styled.div`
-  margin: 399px 30px 0 0;
-  width: 200px;
-  height: 100vh;
-  position: absolute;
-  z-index: 0;
-  left: 270px;
-  background-image: url(${model2});
-  background-size: cover;
-  background-position: -350px 0;
-  background-repeat: no-repeat;
-  @media (min-width: 1367px) {
-    display: none;
-  }
-`;
-export const DivPhoto3 = styled.div`
   border-radius: 50%;
   height: 230px;
   width: 230px;
   margin: 0 0px 0 160px;
-  background-image: url(${model3});
+  background-image: url(${model2});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -95px 0px;
@@ -131,33 +115,17 @@ export const DivPhoto3 = styled.div`
     background-position: center;
   }
 `;
-export const DivPhoto4 = styled.div`
+export const DivPhoto3 = styled.div`
   border-radius: 50%;
   height: 330px;
   width: 330px;
-  background-image: url(${model4});
+  background-image: url(${model3});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -60px 0;
   z-index: 10;
-  margin: 50px 0 0 750px;
+  margin: 50px 0 0 650px;
   @media (max-width: 1200px) {
-    display: none;
-  }
-`;
-export const DivPhoto5 = styled.div`
-  border-radius: 50%;
-  height: 130px;
-  width: 130px;
-  background-image: url(${model5});
-  background-size: center;
-  background-repeat: no-repeat;
-  background-position: -133px -60px;
-  position: absolute;
-  right: 220px;
-  top: 1715px;
-
-  @media (max-height: 1600px) {
     display: none;
   }
 `;
