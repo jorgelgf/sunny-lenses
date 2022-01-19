@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Header from "./components/pages/header/Header";
 import Section1 from "./components/pages/section1/Section1";
 import Section2 from "./components/pages/section2/Section2";
@@ -6,6 +7,8 @@ import Section4 from "./components/pages/section4/Section4";
 import Section5 from "./components/pages/section5/Section5";
 
 function App() {
+  const [cond, setCond] = useState(false);
+  setCond(false);
   return (
     <>
       <Header />
@@ -13,7 +16,8 @@ function App() {
       <Section2 />
       <Section3 />
       <Section4 />
-      <Section5 />
+
+      {cond && <Section5 />}
     </>
   );
 }
