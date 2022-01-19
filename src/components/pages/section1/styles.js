@@ -121,6 +121,7 @@ export const DivButton = styled.div`
       width: auto;
     }
     button {
+      margin-right: 30px;
       font-size: 15px;
       border: none;
       height: 35px;
