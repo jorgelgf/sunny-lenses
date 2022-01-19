@@ -17,6 +17,8 @@ export const DivFull = styled.div`
     justify-content: center;
     align-items: center;
     background-position: -300px;
+    width: 100%;
+    height: 100%;
   }
 
   div {
