@@ -77,7 +77,7 @@ export const DivInfo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 30px 0;
+    margin: 0 0 5px 0;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
   }
@@ -91,7 +91,7 @@ export const DivInfo = styled.div`
     @media (max-width: 550px) {
       font-size: 15px;
       text-align: right;
-      width: 100%;
+      width: 300px;
       margin: 0 0;
     }
   }
@@ -99,7 +99,7 @@ export const DivInfo = styled.div`
 
 export const DivButton = styled.div`
   @media (max-width: 1250px) {
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
 
   div {
