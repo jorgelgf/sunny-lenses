@@ -10,6 +10,9 @@ export const DivFull = styled.div`
   width: 100%;
   background-color: ${themes.bgSection3};
   font-family: ${themes.font};
+  @media (max-width: 1200px) {
+    height: 900px;
+  }
 `;
 
 export const DivTop = styled.div`
@@ -18,10 +21,9 @@ export const DivTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 970px) {
-    border: solid black;
+  @media (max-width: 1200px) {
     flex-direction: column;
-    height: 770px;
+    height: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -35,7 +37,16 @@ export const DivDescription = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  //border: 1px solid;
+
+  p {
+    @media (max-width: 1200px) {
+      font-size: 30px;
+    }
+    @media (max-width: 650px) {
+      font-size: 20px;
+    }
+  }
+
   h1 {
     transition: all 0.3s ease;
     :hover {
@@ -45,7 +56,7 @@ export const DivDescription = styled.div`
       transition: all 0.3s ease;
     }
     @media (max-width: 1200px) {
-      font-size: 20px;
+      font-size: 40px;
       width: 400px;
       margin: auto;
       padding: 0;
@@ -53,6 +64,10 @@ export const DivDescription = styled.div`
   }
   @media (max-width: 1200px) {
     font-size: 14px;
+    margin: auto;
+    height: 400px;
+    padding: 0;
+    width: 90%;
   }
 `;
 
@@ -66,6 +81,9 @@ export const DivPhoto1 = styled.div`
   background-size: cover;
   background-position: -87px 0;
   z-index: 0;
+  @media (max-height: 1600px) {
+    height: 700px;
+  }
   @media (max-width: 1200px) {
     display: none;
   }
@@ -82,7 +100,7 @@ export const DivPhoto2 = styled.div`
   background-size: cover;
   background-position: -350px 0;
   background-repeat: no-repeat;
-  @media (max-width: 1200px) {
+  @media (max-height: 1600px) {
     display: none;
   }
 `;
@@ -97,11 +115,20 @@ export const DivPhoto3 = styled.div`
   background-position: -95px 0px;
   z-index: 3;
   @media (max-width: 1200px) {
-    border-radius: 3px;
-    height: 100%;
-    background-position: center;
+    border-radius: 20px;
+    height: 400px;
+    background-size: cover;
+    background-position: 0 0;
     width: 90%;
-    margin: 0;
+    margin: 45px 0 10px 0;
+    border: solid 10px ${themes.colorPrimary};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px black;
+  }
+  @media (max-width: 600px) {
+    background-position: center;
   }
 `;
 export const DivPhoto4 = styled.div`
@@ -129,7 +156,8 @@ export const DivPhoto5 = styled.div`
   position: absolute;
   right: 220px;
   top: 1715px;
-  @media (max-width: 1200px) {
+
+  @media (max-height: 1600px) {
     display: none;
   }
 `;

@@ -11,9 +11,12 @@ export const DivFull = styled.div`
   font-size: ${themes.font};
   display: flex;
   align-items: center;
-  @media (max-width: 1110px) {
-    justify-content: flex-end;
-    background-position: center;
+  transition: all 0.3s ease;
+
+  @media (max-width: 750px) {
+    justify-content: center;
+    align-items: center;
+    background-position: -300px;
   }
 
   div {
@@ -25,27 +28,24 @@ export const DivFull = styled.div`
     font-size: 20px;
     text-align: right;
     text-shadow: black;
+
     p {
       align-items: flex-end;
       width: 200px;
       margin-right: 30px;
     }
-    @media (max-width: 1110px) {
-      width: 500px;
-      display: flex;
-      align-items: flex-start;
-      width: 400px;
-      margin-right: 40px;
-    }
   }
 `;
 export const Tittle = styled.div`
   margin-right: 40px;
+  transition: all 0.3s ease;
 
-  @media (max-width: 1105px) {
-    border-radius: 5px;
-    margin: 0;
+  @media (max-width: 1276px) {
+    transition: all 0.3s ease;
+
+    margin: 500px 0 0 0;
     display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
   b {
@@ -58,30 +58,28 @@ export const Tittle = styled.div`
     width: 500px;
     margin-right: 20px;
     @media (max-width: 1105px) {
-      border-radius: 1px;
-      width: 200px;
+      width: 400px;
       margin: 0;
       text-align: center;
       font-family: ${themes.font};
-      font-size: 12px;
+      font-size: 25px;
     }
-    @media (max-width: 870px) {
-      color: white;
-      text-shadow: 1px 1px 1px black;
+    @media (max-width: 450px) {
+      font-size: 15px;
     }
   }
 `;
 export const DivInfo = styled.div`
-  display: flex;
   width: 100px;
   margin-right: 60px;
   color: ${themes.fontColorPrimary};
-  @media (max-width: 1105px) {
-    margin: 0 50px 30px 0;
+  @media (max-width: 1276px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px 0;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
-    border-radius: 5px;
-    text-shadow: 1px 1px 1px ${themes.colorSecondary};
   }
 
   div {
@@ -90,22 +88,29 @@ export const DivInfo = styled.div`
     width: 500px;
     font-size: 40px;
     text-align: left;
-    @media (max-width: 1105px) {
-      margin: 0 0px 0 0;
+    @media (max-width: 550px) {
+      font-size: 15px;
+      text-align: center;
+      padding: 0;
       width: 100%;
-      font-size: 30px;
-      border-radius: 5px;
     }
   }
 `;
 
 export const DivButton = styled.div`
+  @media (max-width: 1250px) {
+    margin-bottom: 250px;
+  }
   div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 250px;
-    margin-right: 310px;
+    margin-right: 30px;
+    width: 450px;
+    @media (min-width: 1600px) {
+      width: 300px;
+      margin-right: 200px;
+    }
     button {
       font-size: 15px;
       border: none;
@@ -119,6 +124,11 @@ export const DivButton = styled.div`
         background-color: ${themes.colorSecondary};
         color: ${themes.fontColorPrimary};
         cursor: pointer;
+      }
+      @media (max-width: 1650px) {
+        height: 100%;
+        font-size: 25px;
+        width: 250px;
       }
     }
   }

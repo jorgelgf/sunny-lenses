@@ -12,6 +12,14 @@ export const DivHeader = styled.div`
   width: 600px;
   height: auto;
   margin-left: 100px;
+
+  @media (max-width: 720px) {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const MiniTitle = styled.div`
@@ -20,8 +28,8 @@ export const MiniTitle = styled.div`
   font-size: 15px;
   margin: 40px 0;
   color: ${themes.fontColorPrimary};
-  @media (max-width: 650px) {
-    font-size: 12px;
+  @media (max-width: 800px) {
+    font-size: 17px;
   }
 `;
 
@@ -31,8 +39,15 @@ export const Description = styled.div`
   font-size: 40px;
   margin: 30px 0;
   color: ${themes.fontColorPrimary};
-  @media (max-width: 650px) {
-    font-size: 16px;
+  @media (max-width: 800px) {
+    font-size: 30px;
+    width: 400px;
+  }
+  @media (max-width: 550px) {
+    font-size: 25px;
+    border: 1px solid;
+    width: 200px;
+    margin: 0 0;
   }
 `;
 
@@ -79,6 +94,10 @@ export const DivElement = styled.div`
       -webkit-transform: scale(1.5);
       transform: scale(1.5);
     }
+  }
+  @media (max-width: 800px) {
+    font-size: 30px;
+    text-align: center;
   }
 `;
 export const MarkPoint = styled.p`

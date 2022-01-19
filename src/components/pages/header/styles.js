@@ -10,9 +10,12 @@ export const DivFullHeader = styled.header`
   top: 0;
   left: 0;
   z-index: 10;
+
   @media (max-width: 1151px) {
     flex-direction: column;
     height: 150px;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -20,6 +23,11 @@ export const DivHeader = styled.div`
   width: 50%;
   height: 50px;
   color: ${themes.fontColorPrimary};
+  @media (max-width: 720px) {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 `;
 export const NavLeft = styled.div`
   display: flex;
@@ -40,6 +48,13 @@ export const NavLeft = styled.div`
     }
   }
   @media (max-width: 1151px) {
+    margin: 0;
+    justify-content: center;
+  }
+  @media (max-width: 720px) {
+    display: flex;
+    justify-content: center;
+    margin: 0;
   }
 `;
 
@@ -52,6 +67,7 @@ export const NavRight = styled.div`
   margin-left: 10px;
   margin-right: 10px;
   font-family: ${themes.font};
+
   button {
     color: ${themes.fontColorPrimary};
     display: flex;
@@ -70,6 +86,11 @@ export const NavRight = styled.div`
     }
   }
   @media (max-width: 1151px) {
-    margin-top: 20px;
+    margin-top: 25.5px;
+    height: 100%;
+  }
+  @media (max-width: 720px) {
+    margin: 0;
+    margin-top: 25.5px;
   }
 `;
