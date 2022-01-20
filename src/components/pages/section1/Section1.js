@@ -3,20 +3,16 @@ import * as S from "./styles";
 export default function Section1() {
   return (
     <S.DivFull>
-      <div>
-        <S.Tittle>
-          <b>CUSTOM - TAILORED EYE WEAR </b>
-        </S.Tittle>
-        <S.DivInfo>
-          <div>GLASSES THAT LOOK GOOD ON YOU, NOT JUST ON THE SHELF</div>
-        </S.DivInfo>
-        <S.DivButton>
-          <div>
-            <button>SHOP MEN</button>
-            <button>SHOP WOMAN</button>
-          </div>
-        </S.DivButton>
-      </div>
+      <S.DivInfoButton>
+        <p>
+          <b>CUSTOM-TAILORED EYEWEAR</b>
+        </p>
+        <div>Glasses that look good on you, not just on the self</div>
+        <span>
+          <button>SHOP MEN</button>
+          <button>SHOP WOMEN</button>
+        </span>
+      </S.DivInfoButton>
     </S.DivFull>
   );
 }
