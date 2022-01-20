@@ -97,4 +97,7 @@ export const NavRight = styled.div`
     margin: 0;
     margin-top: 25.5px;
   }
+  @media (max-width: 500px) {
+    font-size: 15px;
+  }
 `;
